@@ -21,6 +21,7 @@
                     extend: {
                       colors: {
                         clifford: '#da373d',
+                        'durnibar': '#E7431B',
                       }
                     }
                   }
@@ -42,12 +43,70 @@
 
 
     </head>
-    <title>Tea House</title>
+    <title>TD Tea House</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container p-4">
+
+      <!-- nav section  -->
+      <div class="navbar my-4 px-0">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a class="text-hockey-primary text-base font-bold">Home</a>
+              </li>
+              <li><a class="text-base font-normal">Tawhid</a></li>
+              <li><a class="text-base font-normal">Daiyan</a></li>
+              <li><a class="text-base font-normal">Blog</a></li>
+              <li><a class="text-base font-normal">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost gap-0 font-extrabold text-lg lg:text-4xl"
+            ><span class="text-durnibar">TD</span>-Tea house</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-hockey-primary text-base font-bold">Home</a></li>
+            <li><a class="text-base font-normal">Tawhid</a></li>
+            <li><a class="text-base font-normal">Daiyan</a></li>
+            <li><a class="text-base font-normal">Blog</a></li>
+            <li><a class="text-base font-normal">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i
+            class="fa-solid fa-magnifying-glass hidden lg:block mr-4 text-2xl"
+          ></i>
+          <a class="btn bg-durnibar text-white text-lg lg:text-xl font-bold"
+            >Get Tea</a
+          >
+        </div>
+      </div>
+
+
         <div class="mb-10">
-            <div class="flex-col lg:flex-row-reverse">
+            <div class="flex flex-col lg:flex-row-reverse">
               <div>
                 <div>
                     <img src="./images/banner.png"/>
@@ -66,13 +125,14 @@
                 <h1 class="text-7xl font-bold">It's good <br>
                     tea time at The <br> Tea House</h1>
                 <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <a class="btn bg-durnibar text-white text-xl font-bold"
+            >Explore More</a>
               </div>
             </div>
           </div>
     </header>
 
-    <main>
+    <main class="container">
 
         <!-- featured section  -->
 
